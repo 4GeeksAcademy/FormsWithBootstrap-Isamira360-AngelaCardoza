@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Payments</title>
 </head>
 
 <body>
 
     <div class="card text-center m-5 ">
-                <div class="card-header text-start">
+        <div class="card-header text-start">
             <h1>Payments Forms Example</h1>
         </div>
 
@@ -35,22 +37,22 @@
 
                 <div class="col-5">
                     <div class="mb-3 text-start">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
+                        <label class="form-label"><strong># Card</strong></label>
+                        <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXXXX">
                     </div>
                 </div>
 
                 <div class="col-3">
                     <div class="mb-3 text-start">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
+                        <label class="form-label"><strong>CVC #</strong></label>
+                        <input type="text" class="form-control" placeholder="0000">
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="mb-3 text-start">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
+                        <label class="form-label"><strong>Amount</strong></label>
+                        <input type="number" class="form-control" placeholder="Amount">
                     </div>
                 </div>
 
@@ -60,15 +62,15 @@
 
                 <div class="col-6">
                     <div class="mb-3 text-start">
-                        <label class="form-label">Firts Name</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
+                        <label class="form-label"><strong>Firts Name</strong></label>
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="mb-3 text-start">
-                        <label class="form-label">Last Name</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
+                        <label class="form-label"><strong>Last Name</strong></label>
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                 </div>
 
@@ -80,16 +82,16 @@
             <div class="row align-items-start">
                 <div class="col-6">
                     <div class="mb-3 text-start">
-                        <label class="form-label">City</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
+                        <label class="form-label"><strong>City</strong></label>
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                 </div>
 
                 <div class="col-3">
                     <div class="mb-3 text-start">
-                        <label class="form-label">State</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Pick a stateState</option>
+                        <label class="form-label"> <strong>State</strong></label>
+                        <select class="form-select text-secondary" aria-label="Default select example">
+                            <option selected>Pick a state</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
@@ -99,7 +101,7 @@
 
                 <div class="col-3">
                     <div class="mb-3 text-start">
-                        <label class="form-label">Posta Code</label>
+                        <label class="form-label"><strong>Postal Code</strong></label>
                         <input type="email" class="form-control" placeholder="">
                     </div>
                 </div>
@@ -115,49 +117,53 @@
 
             <!--4ta row-->
 
-            <div class="row justify-content-md-start mb-4" >
+            <div class="row justify-content-md-start mb-4">
 
                 <div class="col-6 d-flex flex-column align-items-start">
-                    <label >We Accept: </label>
-<div class="col-6 d-flex flex-row ">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1"> 
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                     
-                    </div>
+                    <label><strong>We Accept:</strong> </label>
+                    <div class="col-6 d-flex flex-row bg-secondary rounded-1 p-2 ">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">
+                                <i class="fa-brands fa-cc-mastercard"></i>
 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
-                    </div>
+                        </div>
 
-                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option3">
-                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-diners-club"></i></label>
-                    </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i
+                                    class="fa-brands fa-cc-visa"></i></label>
+                        </div>
 
-                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option4">
-                        <label class="form-check-label" for="inlineRadio2">
-                            <i class="fa-brands fa-cc-amex"></i>
-                        </label>
-                    </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio2"><i
+                                    class="fa-brands fa-cc-diners-club"></i></label>
+                        </div>
 
-</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option4">
+                            <label class="form-check-label" for="inlineRadio2">
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </label>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 md text-start" >
 
-                    <label for="">Message</label>
-<div class="form-floating">
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-  <label for="floatingTextarea2">Comments</label>
-</div>
+                    <label for="floatingTextarea2Disabled"> <strong>Message</strong></label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                        <div class="form-text m-auto text-start"> Add any notes here</div>
+                    </div>
 
                 </div>
 
@@ -170,12 +176,17 @@
             <div class="card-footer text-body-secondary">
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <button class="btn btn-secondary me-md-2" type="submit">Cancel</button>
-  <button class="btn btn-primary" type="button">Send</button>
-</div>
+                    <button class="btn btn-secondary me-md-2" type="submit">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
             </div>
         </div>
 
+
+
+
+
+        
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
